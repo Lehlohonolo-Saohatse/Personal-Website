@@ -1,0 +1,99 @@
+/* Header Styling */
+.header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container ul li {
+    margin: 0 20px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-container ul li a:hover {
+    color: #007bff;
+}
+
+/* Main Content */
+/* Certifications Section Styling */
+.certifications-section {
+    padding: 20px;
+}
+
+.certifications-category {
+    margin-bottom: 30px;
+}
+
+.certifications-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line on smaller screens */
+    gap: 20px; /* Space between cards */
+}
+
+.certification-card {
+    flex: 1 1 calc(50% - 20px); /* Adjust width for two cards per row */
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Optional: Add border for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners for cards */
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background for cards */
+    display: flex;
+    flex-direction: column; /* Stack image and description vertically */
+    align-items: center; /* Center-align items */
+    gap: 10px; /* Space between image and description */
+}
+
+.certificate-image {
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distorting the image */
+    border-radius: 5px; /* Optional: Rounded corners for images */
+}
+
+.certification-info {
+    text-align: center; /* Center-align text below the image */
+}
+
+.certification-info h4 {
+    margin: 0 0 10px 0; /* Margin below the heading */
+}
+
+.certification-info p {
+    margin: 0; /* Remove margin from the paragraph */
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .certifications-list {
+        flex-direction: column;
+    }
+
+    .nav-container ul {
+        flex-direction: column;
+    }
+
+    .nav-container ul li {
+        margin: 10px 0;
+    }
+}
